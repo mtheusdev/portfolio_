@@ -3,6 +3,7 @@ import GlassCard from "@/components/ui/GlassCard";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { EXPERIENCES } from "@/lib/constants";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import { useRef } from "react";
 
 export default function Experience() {
@@ -105,9 +106,13 @@ export default function Experience() {
                                 href={link.url}
                                 key={i}
                                 target="_blank"
-                                className="text-xs uppercase tracking-wider text-gold-500 hover:text-gold-400 hover:underline"
+                                className="inline-flex items-center gap-0.5 text-xs uppercase tracking-wider text-gold-500 hover:text-gold-400 hover:underline group"
                               >
-                                {link.label} ↗
+                                {link.label}
+                                <ArrowUpRight
+                                  size={14}
+                                  className="transform transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                                />
                               </a>
                             ))}
                           </div>

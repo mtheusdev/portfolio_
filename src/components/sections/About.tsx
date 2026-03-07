@@ -2,7 +2,12 @@
 import GlassCard from "@/components/ui/GlassCard";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { motion } from "framer-motion";
-import { BrainCircuit, GraduationCap, Languages } from "lucide-react";
+import {
+  ArrowUpRight,
+  BrainCircuit,
+  GraduationCap,
+  Languages,
+} from "lucide-react";
 
 export default function About() {
   // Since we don't have all translations defined in the json files in the prompt,
@@ -64,9 +69,10 @@ export default function About() {
               className="inline-flex mt-6 text-gold-500 hover:text-gold-400 font-medium group transition-colors"
             >
               Ver currículo completo
-              <span className="transform transition-transform group-hover:translate-x-1 ml-2">
-                ↗
-              </span>
+              <ArrowUpRight
+                size={16}
+                className="ml-1 transform transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              />
             </a>
           </motion.div>
 
