@@ -1,0 +1,16 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "contact": "Contato",
+    "downloadCV": "Baixar CV"
+  },
+  "hero": {
+    "label": "SENIOR FULL STACK ENGINEER · TECH LEAD",
+    "subtitle": "Construindo sistemas escaláveis e experiências digitais excepcionais.",
+    "cta1": "Ver Projetos",
+    "cta2": "Entre em Contato"
+  }
+}
