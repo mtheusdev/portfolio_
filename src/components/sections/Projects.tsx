@@ -14,7 +14,13 @@ const MOBILE_IDS = [
   "contador-treinos",
 ];
 
-function PhoneMockup({ projectId }: { projectId: string }) {
+function PhoneMockup({
+  projectId,
+  hasPlayStoreLink,
+}: {
+  projectId: string;
+  hasPlayStoreLink: boolean;
+}) {
   return (
     <div className="flex items-center justify-center py-6 bg-gradient-to-b from-[#0d0d0d] to-[#111]">
       {/* Phone shell */}
@@ -33,21 +39,23 @@ function PhoneMockup({ projectId }: { projectId: string }) {
         </div>
       </div>
 
-      {/* Play Store badge */}
-      <div className="absolute bottom-3 right-3 flex items-center gap-1 bg-[#111] border border-gold-500/20 rounded-full px-2 py-0.5">
-        <svg
-          width="10"
-          height="10"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="text-gold-500"
-        >
-          <path d="M3.18 23.76 A1.5 1.5 0 0 1 1.5 22.5V1.5A1.5 1.5 0 0 1 3.18.24l18.46 10.5a1.5 1.5 0 0 1 0 2.52z" />
-        </svg>
-        <span className="text-[8px] font-mono text-gold-500/80">
-          Play Store
-        </span>
-      </div>
+      {/* Play Store badge — only for apps published on the store */}
+      {hasPlayStoreLink && (
+        <div className="absolute bottom-3 right-3 flex items-center gap-1 bg-[#111] border border-gold-500/20 rounded-full px-2 py-0.5">
+          <svg
+            width="10"
+            height="10"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="text-gold-500"
+          >
+            <path d="M3.18 23.76 A1.5 1.5 0 0 1 1.5 22.5V1.5A1.5 1.5 0 0 1 3.18.24l18.46 10.5a1.5 1.5 0 0 1 0 2.52z" />
+          </svg>
+          <span className="text-[8px] font-mono text-gold-500/80">
+            Play Store
+          </span>
+        </div>
+      )}
     </div>
   );
 }
@@ -125,7 +133,10 @@ export default function Projects() {
                     {/* Preview Area */}
                     {isMobile ? (
                       <div className="relative border-b border-border-subtle">
-                        <PhoneMockup projectId={project.id} />
+                        <PhoneMockup
+                          projectId={project.id}
+                          hasPlayStoreLink={!!project.link}
+                        />
                       </div>
                     ) : (
                       <WebPreview projectId={project.id} />
@@ -159,7 +170,9 @@ export default function Projects() {
                             target="_blank"
                             className="flex items-center gap-1.5 text-xs text-gold-500 hover:text-gold-400 font-medium transition-colors"
                           >
-                            {isMobile ? "Ver na Play Store" : "Ver projeto"}
+                            {isMobile && project.link
+                              ? "Ver na Play Store"
+                              : "Ver projeto"}
                             <ArrowUpRight size={13} />
                           </a>
                         )}

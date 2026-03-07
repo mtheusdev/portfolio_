@@ -3,11 +3,12 @@ import { Link, usePathname, useRouter } from "@/i18n/routing";
 import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
 export default function Header() {
   const t = useTranslations("nav");
+  const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
 
@@ -31,7 +32,7 @@ export default function Header() {
   ];
 
   const handleLocaleChange = () => {
-    const nextLocale = pathname.startsWith("/en") ? "pt" : "en";
+    const nextLocale = locale === "en" ? "pt" : "en";
     router.replace(pathname, { locale: nextLocale });
   };
 
@@ -71,7 +72,7 @@ export default function Header() {
               onClick={handleLocaleChange}
               className="text-xs uppercase tracking-widest text-text-secondary hover:text-gold-400"
             >
-              {pathname.startsWith("/en") ? "PT" : "EN"}
+              {locale === "en" ? "PT" : "EN"}
             </button>
 
             <a
@@ -130,7 +131,7 @@ export default function Header() {
                 }}
                 className="text-sm uppercase tracking-widest text-gold-400"
               >
-                Switch to {pathname.startsWith("/en") ? "PT" : "EN"}
+                Switch to {locale === "en" ? "PT" : "EN"}
               </button>
               <a
                 href="/cv.pdf"
