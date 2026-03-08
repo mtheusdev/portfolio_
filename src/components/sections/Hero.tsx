@@ -128,7 +128,7 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -left-8 top-1/4 glass-card border border-gold-500/20 px-4 py-3 rounded-xl flex items-center gap-3"
+              className="absolute left-0 md:-left-8 top-1/4 glass-card border border-gold-500/20 px-3 md:px-4 py-2 md:py-3 rounded-xl flex items-center gap-2 md:gap-3 z-20"
             >
               <div className="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></div>
               <div>
@@ -147,7 +147,7 @@ export default function Hero() {
                 ease: "easeInOut",
                 delay: 1,
               }}
-              className="absolute -right-4 top-1/2 glass-card border border-gold-500/20 px-4 py-3 rounded-xl flex items-center gap-3"
+              className="absolute right-0 md:-right-4 top-1/2 glass-card border border-gold-500/20 px-3 md:px-4 py-2 md:py-3 rounded-xl flex items-center gap-2 md:gap-3 z-20"
             >
               <div className="text-gold-500">
                 <svg

@@ -56,7 +56,7 @@ export default function Recommendations() {
           {RECOMMENDATIONS.map((rec, index) => (
             <GlassCard
               key={index}
-              className="min-w-[85vw] md:min-w-[450px] lg:min-w-[500px] snap-center shrink-0 flex flex-col h-full"
+              className="w-[85vw] max-w-[320px] sm:max-w-none sm:min-w-[350px] md:min-w-[450px] lg:min-w-[500px] snap-center shrink-0 flex flex-col h-full"
             >
               <Quote size={40} className="text-gold-500/20 mb-6" />
               <p className="text-text-secondary font-light leading-relaxed mb-8 flex-1 text-lg">

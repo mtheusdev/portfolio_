@@ -17,7 +17,7 @@ export default function About() {
     <section id="about" className="relative py-24 md:py-32 overflow-hidden">
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         {/* Large Decorative Number */}
-        <div className="absolute top-0 right-0 font-display text-[20rem] leading-none text-gold-500/5 select-none pointer-events-none -z-10 -translate-y-1/4 translate-x-1/4">
+        <div className="absolute top-0 right-0 font-display text-[12rem] md:text-[20rem] leading-none text-gold-500/5 select-none pointer-events-none -z-10 -translate-y-1/4 translate-x-1/4">
           01
         </div>
 

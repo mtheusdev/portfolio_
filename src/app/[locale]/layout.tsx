@@ -55,7 +55,7 @@ export default async function LocaleLayout({
       lang={locale}
       className={`${cormorant.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}
     >
-      <body className="antialiased min-h-screen flex flex-col">
+      <body className="antialiased min-h-screen flex flex-col overflow-x-hidden">
         <NextIntlClientProvider messages={messages}>
           <CustomCursor />
           <Header />
