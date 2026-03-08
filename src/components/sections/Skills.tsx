@@ -4,19 +4,21 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import TechBadge from "@/components/ui/TechBadge";
 import { SKILLS } from "@/lib/constants";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Skills() {
+  const t = useTranslations("skills");
   return (
     <section id="skills" className="relative py-24 md:py-32">
       <div className="container mx-auto px-6 max-w-7xl">
-        <SectionTitle number="04" title="Habilidades" />
+        <SectionTitle number="04" title={t("title")} />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mt-16">
           {/* Group 1: Frontend (60% space -> 7 cols on lg) */}
           <div className="lg:col-span-7 flex flex-col gap-8">
             <h3 className="font-display text-2xl text-text-primary mb-2 flex items-center gap-4">
               <span className="text-gold-500 font-mono text-xl">{"<"}</span>
-              Frontend & UI
+              {t("frontend")}
               <span className="text-gold-500 font-mono text-xl">{">"}</span>
             </h3>
 
@@ -54,7 +56,7 @@ export default function Skills() {
             <div>
               <h3 className="font-display text-2xl text-text-primary mb-6 flex items-center gap-4">
                 <span className="text-gold-500 font-mono text-xl">{"{"}</span>
-                Backend & Infra
+                {t("backend")}
                 <span className="text-gold-500 font-mono text-xl">{"}"}</span>
               </h3>
 
@@ -73,7 +75,7 @@ export default function Skills() {
             <div>
               <h3 className="font-display text-2xl text-text-primary mb-6 flex items-center gap-4">
                 <span className="text-gold-500 font-mono text-xl">{"["}</span>
-                Ferramentas & Workflow
+                {t("tools")}
                 <span className="text-gold-500 font-mono text-xl">{"]"}</span>
               </h3>
 

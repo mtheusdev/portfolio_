@@ -5,12 +5,66 @@
     "projects": "Projects",
     "skills": "Skills",
     "contact": "Contact",
-    "downloadCV": "Download CV"
+    "downloadCV": "Download CV",
+    "switchTo": "Switch to"
+  },
+  "footer": {
+    "madeWith": "Made with lots of coffee ☕",
+    "craftedWith": "Crafted with Next.js & ♥"
   },
   "hero": {
     "label": "SENIOR FULL STACK ENGINEER · TECH LEAD",
     "subtitle": "Crafting scalable systems and exceptional digital experiences.",
     "cta1": "View Projects",
-    "cta2": "Get in Touch"
+    "cta2": "Get in Touch",
+    "yearsOfXp": "Years of XP",
+    "projectsDelivered": "Completed Projects",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "About me",
+    "description1": "I am a <bold>Senior Full Stack & Mobile Engineer</bold> specialized in building high-impact digital solutions. With over 5 years of experience, my journey is guided by the constant pursuit of uniting <gold>scalable architecture</gold> with <gold>exceptional user experiences</gold>. Beyond web and cloud systems, I am passionate about creating and publishing <bold>mobile applications on the Google Play Store</bold>.",
+    "description2": "I currently lead the development of complex ecosystems, from architectural design in the cloud to the implementation of immersive interfaces on frontend and mobile. My main stack involves <bold>React, React Native, Next.js, Node.js and AWS</bold>.",
+    "description3": "I am driven by technical challenges and fascinated by the intersections between software engineering and artificial intelligence applied to the real world.",
+    "cvButton": "View full resume",
+    "educationTitle": "Education",
+    "educationDegree": "UDESC — Bachelor's in Computer Science",
+    "languagesTitle": "Languages",
+    "portuguese": "Portuguese",
+    "english": "English",
+    "native": "Native",
+    "intermediate": "Intermediate",
+    "interestsTitle": "Interests",
+    "interestMobile": "Mobile Development",
+    "interestArchitecture": "Systems Architecture",
+    "interestAI": "Applied AI",
+    "interestExperiences": "Digital Experiences"
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "projects": {
+    "title": "Projects",
+    "all": "All",
+    "viewProject": "View project",
+    "viewPlayStore": "View on Play Store",
+    "privateRepo": "Private repository"
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend & UI",
+    "backend": "Backend & Infra",
+    "tools": "Tools & Workflow"
+  },
+  "recommendations": {
+    "title": "Recommendations"
+  },
+  "contact": {
+    "title": "Let's build something amazing?",
+    "subtitle": "Open to remote opportunities and freelance projects",
+    "description": "Have a project in mind or just want to say hi? Choose the most convenient way to get in touch.",
+    "socials": "Socials",
+    "emailResponse": "Response within 24h",
+    "whatsappResponse": "Fastest response"
   }
 }

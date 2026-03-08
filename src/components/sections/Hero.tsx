@@ -135,7 +135,7 @@ export default function Hero() {
                 <p className="text-text-primary font-bold text-lg leading-none">
                   7+
                 </p>
-                <p className="text-text-muted text-xs">Anos de XP</p>
+                <p className="text-text-muted text-xs">{t("yearsOfXp")}</p>
               </div>
             </motion.div>
 
@@ -168,7 +168,9 @@ export default function Hero() {
                 <p className="text-text-primary font-bold text-lg leading-none">
                   20+
                 </p>
-                <p className="text-text-muted text-xs">Projetos Entregues</p>
+                <p className="text-text-muted text-xs">
+                  {t("projectsDelivered")}
+                </p>
               </div>
             </motion.div>
           </motion.div>
@@ -183,7 +185,7 @@ export default function Hero() {
         className="absolute bottom-12 left-6 md:left-12 flex flex-col items-center gap-4"
       >
         <span className="font-mono text-xs text-text-muted rotate-90 origin-left translate-x-[4px] tracking-widest uppercase">
-          Scroll
+          {t("scroll")}
         </span>
         <motion.div className="w-[1px] h-16 bg-gold-500/20 relative overflow-hidden">
           <motion.div

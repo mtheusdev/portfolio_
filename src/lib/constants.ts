@@ -31,7 +31,7 @@ export const EXPERIENCES = [
       ],
     },
     links: [
-      { label: "Agroplayer", url: "#" },
+      { label: "Agroplayer", url: "https://agroplayer.com.br/" },
       { label: "Zap Suite", url: "https://chatbot.zapsuite.com.br/" },
     ],
   },
@@ -155,7 +155,7 @@ export const PROJECTS = [
     },
     stack: ["Next.js", "NestJS", "PostgreSQL", "DevOps"],
     image: "/images/projects/agroplayer.png",
-    link: "#",
+    link: "https://agroplayer.com.br/",
   },
   {
     id: "zapsuite",
@@ -181,7 +181,7 @@ export const PROJECTS = [
     },
     stack: ["React", "Node.js", "Firebase", "GCP"],
     image: "/images/projects/flux.png",
-    link: "https://protoflows.com",
+    link: "https://testwithflux.com/",
   },
   {
     id: "aceleresai",
@@ -194,7 +194,7 @@ export const PROJECTS = [
     },
     stack: ["React", "NestJS", "Node.js", "AWS"],
     image: "/images/projects/aceleres.png",
-    link: "https://aceleresai.com",
+    link: "https://aceleres.ai/",
   },
   {
     id: "sbisecurity",
@@ -207,7 +207,7 @@ export const PROJECTS = [
     },
     stack: ["React", "NestJS", "MongoDB", "AWS"],
     image: "/images/projects/sbisecurity.png",
-    link: "https://sbi.security",
+    link: "https://www.sbisecurity.ai/",
   },
   {
     id: "keratoconus",
@@ -220,7 +220,7 @@ export const PROJECTS = [
     },
     stack: ["Python", "scikit-learn", "Machine Learning"],
     image: "/images/projects/ceratocone.jpg",
-    link: "https://repositorio.udesc.br/handle/123456789/2464",
+    link: "https://sistemabu.udesc.br/pergamumweb/vinculos/0000a8/0000a853.pdf",
   },
   {
     id: "urbanii",
@@ -233,6 +233,7 @@ export const PROJECTS = [
     },
     stack: ["PHP 7", "MySQL", "GCP"],
     image: "/images/projects/urbanii.png",
+    link: "https://urbanii.com.br/",
   },
   {
     id: "sorteador-de-letras",

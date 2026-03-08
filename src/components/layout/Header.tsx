@@ -131,7 +131,7 @@ export default function Header() {
                 }}
                 className="text-sm uppercase tracking-widest text-gold-400"
               >
-                Switch to {locale === "en" ? "PT" : "EN"}
+                {t("switchTo")} {locale === "en" ? "PT" : "EN"}
               </button>
               <a
                 href="/cv.pdf"

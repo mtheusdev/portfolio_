@@ -8,10 +8,10 @@ import {
   GraduationCap,
   Languages,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function About() {
-  // Since we don't have all translations defined in the json files in the prompt,
-  // I will use some hardcoded text here or mixed concepts for this implementation.
+  const t = useTranslations("about");
 
   return (
     <section id="about" className="relative py-24 md:py-32 overflow-hidden">
@@ -21,7 +21,7 @@ export default function About() {
           01
         </div>
 
-        <SectionTitle number="01" title="Sobre mim" />
+        <SectionTitle number="01" title={t("title")} />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 relative">
           {/* Left Line Deco */}
@@ -36,39 +36,30 @@ export default function About() {
             className="flex flex-col gap-6 text-text-secondary leading-relaxed font-light"
           >
             <p>
-              Sou um{" "}
-              <strong className="text-text-primary font-normal">
-                Senior Full Stack & Mobile Engineer
-              </strong>{" "}
-              especializado na construção de soluções digitais de alto impacto.
-              Com mais de 5 anos de experiência, minha jornada é guiada pela
-              constante busca em unir{" "}
-              <span className="text-gold-400">arquitetura escalável</span> com{" "}
-              <span className="text-gold-400">
-                experiências de usuário excepcionais
-              </span>
-              . Além de sistemas web e cloud, tenho paixão por criar e publicar{" "}
-              <strong>aplicativos mobile na Google Play Store</strong>.
+              {t.rich("description1", {
+                bold: (chunks) => (
+                  <strong className="text-text-primary font-normal">
+                    {chunks}
+                  </strong>
+                ),
+                gold: (chunks) => (
+                  <span className="text-gold-400">{chunks}</span>
+                ),
+              })}
             </p>
             <p>
-              Atualmente lidero o desenvolvimento de ecossistemas complexos,
-              indo desde a concepção arquitetural em cloud até a implementação
-              de interfaces imersivas no frontend e em mobile. Minha principal
-              stack envolve{" "}
-              <strong>React, React Native, Next.js, Node.js e AWS</strong>.
+              {t.rich("description2", {
+                bold: (chunks) => <strong>{chunks}</strong>,
+              })}
             </p>
-            <p>
-              Sou movido por desafios técnicos e fascinado pelas interseções
-              entre engenharia de software e inteligência artificial aplicadas
-              ao mundo real.
-            </p>
+            <p>{t("description3")}</p>
 
             <a
               href="/cv.pdf"
               target="_blank"
               className="inline-flex mt-6 text-gold-500 hover:text-gold-400 font-medium group transition-colors"
             >
-              Ver currículo completo
+              {t("cvButton")}
               <ArrowUpRight
                 size={16}
                 className="ml-1 transform transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -91,10 +82,10 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-text-primary font-medium mb-1">
-                    Formação Acadêmica
+                    {t("educationTitle")}
                   </h3>
                   <p className="text-text-secondary font-light">
-                    UDESC — Bacharelado em Ciência da Computação
+                    {t("educationDegree")}
                   </p>
                   <p className="text-text-muted text-sm mt-1">2016 – 2023</p>
                 </div>
@@ -108,13 +99,13 @@ export default function About() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-text-primary font-medium mb-2">
-                    Idiomas
+                    {t("languagesTitle")}
                   </h3>
                   <div className="flex justify-between items-center text-text-secondary font-light">
                     <span>
-                      Português{" "}
+                      {t("portuguese")}{" "}
                       <span className="text-text-muted text-sm ml-2">
-                        Nativo
+                        {t("native")}
                       </span>
                     </span>
                     <span>🇧🇷</span>
@@ -122,9 +113,9 @@ export default function About() {
                   <div className="h-[1px] w-full bg-border-subtle my-2"></div>
                   <div className="flex justify-between items-center text-text-secondary font-light">
                     <span>
-                      Inglês{" "}
+                      {t("english")}{" "}
                       <span className="text-text-muted text-sm ml-2">
-                        Intermediário
+                        {t("intermediate")}
                       </span>
                     </span>
                     <span>🇺🇸</span>
@@ -140,20 +131,20 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-text-primary font-medium mb-2">
-                    Interesses
+                    {t("interestsTitle")}
                   </h3>
                   <div className="flex flex-wrap gap-2 text-text-secondary font-light text-sm">
                     <span className="bg-bg-secondary px-3 py-1 rounded-full border border-border-subtle">
-                      Desenvolvimento Mobile
+                      {t("interestMobile")}
                     </span>
                     <span className="bg-bg-secondary px-3 py-1 rounded-full border border-border-subtle">
-                      Arquitetura de Sistemas
+                      {t("interestArchitecture")}
                     </span>
                     <span className="bg-bg-secondary px-3 py-1 rounded-full border border-border-subtle">
-                      IA Aplicada
+                      {t("interestAI")}
                     </span>
                     <span className="bg-bg-secondary px-3 py-1 rounded-full border border-border-subtle">
-                      Experiências Digitais
+                      {t("interestExperiences")}
                     </span>
                   </div>
                 </div>

@@ -3,6 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import { PERSONAL_INFO } from "@/lib/constants";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const WHATSAPP_NUMBER = "5547991936552";
 const WHATSAPP_MESSAGE = encodeURIComponent(
@@ -10,26 +11,26 @@ const WHATSAPP_MESSAGE = encodeURIComponent(
 );
 
 export default function Contact() {
+  const t = useTranslations("contact");
   return (
     <section id="contact" className="relative py-24 md:py-32">
       <div className="container mx-auto px-6 max-w-7xl">
-        <SectionTitle number="06" title="Vamos construir algo incrível?" />
+        <SectionTitle number="06" title={t("title")} />
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Panel */}
           <div className="flex flex-col gap-6">
             <h3 className="font-display text-3xl md:text-5xl text-text-primary leading-tight">
-              Aberto a oportunidades remotas e projetos freelance
+              {t("subtitle")}
             </h3>
             <p className="text-text-secondary font-light text-lg">
-              Tem um projeto em mente ou apenas quer dar um oi? Escolha a forma
-              mais conveniente para você entrar em contato.
+              {t("description")}
             </p>
 
             {/* Social Links */}
             <div className="flex flex-col gap-2 mt-4">
               <span className="font-mono text-xs uppercase tracking-widest text-gold-500 mb-2">
-                Redes
+                {t("socials")}
               </span>
               {[
                 { label: "LinkedIn", href: PERSONAL_INFO.linkedin },
@@ -91,7 +92,7 @@ export default function Contact() {
                   {PERSONAL_INFO.email}
                 </span>
                 <span className="text-text-muted text-xs">
-                  Resposta em até 24h
+                  {t("emailResponse")}
                 </span>
               </div>
               <ArrowUpRight
@@ -128,7 +129,7 @@ export default function Contact() {
                   +55 (47) 99193-6552
                 </span>
                 <span className="text-text-muted text-xs">
-                  Resposta mais rápida
+                  {t("whatsappResponse")}
                 </span>
               </div>
               <ArrowUpRight

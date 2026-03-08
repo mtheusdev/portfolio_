@@ -4,9 +4,12 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import { EXPERIENCES } from "@/lib/constants";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import { useRef } from "react";
 
 export default function Experience() {
+  const t = useTranslations("experience");
+  const locale = useLocale() as "pt" | "en";
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -18,7 +21,7 @@ export default function Experience() {
   return (
     <section id="experience" className="relative py-24 md:py-32">
       <div className="container mx-auto px-6 max-w-7xl">
-        <SectionTitle number="02" title="Experiência" />
+        <SectionTitle number="02" title={t("title")} />
 
         <div className="relative mt-20" ref={containerRef}>
           {/* Central Line */}
@@ -66,7 +69,7 @@ export default function Experience() {
                     >
                       <GlassCard className="text-left group-hover:translate-x-1">
                         <p className="font-mono text-gold-500 text-sm mb-2 opacity-80">
-                          {exp.period.pt}
+                          {exp.period[locale]}
                         </p>
                         <h3 className="text-xl text-text-primary font-medium mb-1">
                           {exp.role}
@@ -78,7 +81,7 @@ export default function Experience() {
                         <div
                           className={`flex flex-col gap-2 mb-6 text-sm text-text-muted ${isEven ? "md:items-end" : "md:items-start"}`}
                         >
-                          {exp.description.pt.map((item, i) => (
+                          {exp.description[locale].map((item, i) => (
                             <p
                               key={i}
                               className="flex gap-2 items-start text-left"

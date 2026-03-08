@@ -5,12 +5,66 @@
     "projects": "Projetos",
     "skills": "Habilidades",
     "contact": "Contato",
-    "downloadCV": "Baixar CV"
+    "downloadCV": "Baixar CV",
+    "switchTo": "Mudar para"
+  },
+  "footer": {
+    "madeWith": "Feito com muito café ☕",
+    "craftedWith": "Criado com Next.js & ♥"
   },
   "hero": {
     "label": "SENIOR FULL STACK ENGINEER · TECH LEAD",
     "subtitle": "Construindo sistemas escaláveis e experiências digitais excepcionais.",
     "cta1": "Ver Projetos",
-    "cta2": "Entre em Contato"
+    "cta2": "Entre em Contato",
+    "yearsOfXp": "Anos de XP",
+    "projectsDelivered": "Projetos Entregues",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "description1": "Sou um <bold>Senior Full Stack & Mobile Engineer</bold> especializado na construção de soluções digitais de alto impacto. Com mais de 5 anos de experiência, minha jornada é guiada pela constante busca em unir <gold>arquitetura escalável</gold> com <gold>experiências de usuário excepcionais</gold>. Além de sistemas web e cloud, tenho paixão por criar e publicar <bold>aplicativos mobile na Google Play Store</bold>.",
+    "description2": "Atualmente lidero o desenvolvimento de ecossistemas complexos, indo desde a concepção arquitetural em cloud até a implementação de interfaces imersivas no frontend e em mobile. Minha principal stack envolve <bold>React, React Native, Next.js, Node.js e AWS</bold>.",
+    "description3": "Sou movido por desafios técnicos e fascinado pelas interseções entre engenharia de software e inteligência artificial aplicadas ao mundo real.",
+    "cvButton": "Ver currículo completo",
+    "educationTitle": "Formação Acadêmica",
+    "educationDegree": "UDESC — Bacharelado em Ciência da Computação",
+    "languagesTitle": "Idiomas",
+    "portuguese": "Português",
+    "english": "Inglês",
+    "native": "Nativo",
+    "intermediate": "Intermediário",
+    "interestsTitle": "Interesses",
+    "interestMobile": "Desenvolvimento Mobile",
+    "interestArchitecture": "Arquitetura de Sistemas",
+    "interestAI": "IA Aplicada",
+    "interestExperiences": "Experiências Digitais"
+  },
+  "experience": {
+    "title": "Experiência"
+  },
+  "projects": {
+    "title": "Projetos",
+    "all": "Todos",
+    "viewProject": "Ver projeto",
+    "viewPlayStore": "Ver na Play Store",
+    "privateRepo": "Repositório privado"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "frontend": "Frontend & UI",
+    "backend": "Backend & Infra",
+    "tools": "Ferramentas & Workflow"
+  },
+  "recommendations": {
+    "title": "Recomendações"
+  },
+  "contact": {
+    "title": "Vamos construir algo incrível?",
+    "subtitle": "Aberto a oportunidades remotas e projetos freelance",
+    "description": "Tem um projeto em mente ou apenas quer dar um oi? Escolha a forma mais conveniente para você entrar em contato.",
+    "socials": "Redes",
+    "emailResponse": "Resposta em até 24h",
+    "whatsappResponse": "Resposta mais rápida"
   }
 }

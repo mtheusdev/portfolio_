@@ -6,6 +6,7 @@ import { PROJECTS } from "@/lib/constants";
 import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -98,17 +99,21 @@ function WebPreview({ image, title }: { image?: string; title: string }) {
 }
 
 export default function Projects() {
-  const [filter, setFilter] = useState("All");
+  const t = useTranslations("projects");
+  const locale = useLocale() as "pt" | "en";
+  const [filter, setFilter] = useState("_all_");
 
   const categories = [
-    "All",
-    ...Array.from(new Set(PROJECTS.map((p) => p.category.pt))),
+    { id: "_all_", label: t("all") },
+    ...Array.from(new Set(PROJECTS.map((p) => p.category[locale]))).map(
+      (cat) => ({ id: cat, label: cat }),
+    ),
   ];
 
   const filteredProjects =
-    filter === "All"
+    filter === "_all_"
       ? PROJECTS
-      : PROJECTS.filter((p) => p.category.pt === filter);
+      : PROJECTS.filter((p) => p.category[locale] === filter);
 
   return (
     <section
@@ -116,22 +121,22 @@ export default function Projects() {
       className="relative py-24 md:py-32 bg-[rgba(10,10,10,0.5)]"
     >
       <div className="container mx-auto px-6 max-w-7xl">
-        <SectionTitle number="03" title="Projetos" />
+        <SectionTitle number="03" title={t("title")} />
 
         {/* Filter Pills */}
         <div className="flex flex-wrap gap-3 mb-12">
           {categories.map((cat) => (
             <button
-              key={cat}
-              onClick={() => setFilter(cat)}
+              key={cat.id}
+              onClick={() => setFilter(cat.id)}
               className={clsx(
                 "px-4 py-1.5 rounded-full text-xs font-medium transition-all duration-300 border backdrop-blur-md",
-                filter === cat
+                filter === cat.id
                   ? "bg-gold-500/10 text-gold-400 border-gold-500/50 shadow-[0_0_15px_rgba(212,160,23,0.15)]"
                   : "bg-transparent text-text-muted border-border-subtle hover:border-gold-500/30 hover:text-text-secondary",
               )}
             >
-              {cat}
+              {cat.label}
             </button>
           ))}
         </div>
@@ -172,7 +177,7 @@ export default function Projects() {
                     {/* Content */}
                     <div className="p-5 flex-1 flex flex-col">
                       <span className="font-mono text-[10px] uppercase tracking-widest text-gold-500 mb-2">
-                        {project.category.pt} · {project.year}
+                        {project.category[locale]} · {project.year}
                       </span>
 
                       <h3 className="font-display text-lg md:text-xl text-text-primary mb-2">
@@ -180,7 +185,7 @@ export default function Projects() {
                       </h3>
 
                       <p className="text-text-secondary font-light text-xs md:text-sm leading-relaxed mb-4 flex-1">
-                        {project.description.pt}
+                        {project.description[locale]}
                       </p>
 
                       <div className="flex flex-wrap gap-1.5 mb-4">
@@ -198,14 +203,14 @@ export default function Projects() {
                             className="flex items-center gap-1.5 text-xs text-gold-500 hover:text-gold-400 font-medium transition-colors"
                           >
                             {isMobile && project.link
-                              ? "Ver na Play Store"
-                              : "Ver projeto"}
+                              ? t("viewPlayStore")
+                              : t("viewProject")}
                             <ArrowUpRight size={13} />
                           </a>
                         )}
                         {!project.link && (
                           <span className="text-xs text-text-muted">
-                            Repositório privado
+                            {t("privateRepo")}
                           </span>
                         )}
                       </div>

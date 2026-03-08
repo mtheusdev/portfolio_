@@ -3,9 +3,12 @@ import GlassCard from "@/components/ui/GlassCard";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { RECOMMENDATIONS } from "@/lib/constants";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import { useRef } from "react";
 
 export default function Recommendations() {
+  const t = useTranslations("recommendations");
+  const locale = useLocale() as "pt" | "en";
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
@@ -27,7 +30,7 @@ export default function Recommendations() {
     >
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="flex justify-between items-end mb-12">
-          <SectionTitle number="05" title="Recomendações" />
+          <SectionTitle number="05" title={t("title")} />
 
           <div className="hidden md:flex gap-4 mb-12">
             <button
@@ -57,7 +60,7 @@ export default function Recommendations() {
             >
               <Quote size={40} className="text-gold-500/20 mb-6" />
               <p className="text-text-secondary font-light leading-relaxed mb-8 flex-1 text-lg">
-                &quot;{rec.text.pt}&quot;
+                &quot;{rec.text[locale]}&quot;
               </p>
 
               <div className="flex items-center gap-4 mt-auto pt-6 border-t border-border-subtle">
