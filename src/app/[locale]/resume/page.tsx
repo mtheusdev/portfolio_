@@ -92,19 +92,14 @@ export default function ResumePage() {
         <div className="flex-1 px-8 py-4 flex flex-col gap-3">
           {/* Summary / About */}
           <section>
-            <h3 className="text-base font-display font-bold text-gray-900 border-b border-gold-500 inline-block mb-2 uppercase tracking-wider">
-              {tAbout("title")}
-            </h3>
-            <div className="text-sm text-gray-700 leading-relaxed space-y-2">
-              <p className="mb-1">
+            <div className="mb-2">
+              <h3 className="text-base font-display font-bold text-gray-900 border-b border-gold-500 inline-block mb-2 uppercase tracking-wider">
+                {locale === "pt" ? "Sobre Mim" : "About Me"}
+              </h3>
+              <p className="text-[11px] text-gray-700 leading-snug">
                 {locale === "pt"
-                  ? "Sou um Senior Full Stack & Mobile Engineer especializado na construção de soluções digitais de alto impacto. Com forte background em arquitetura escalável e experiência do usuário, desenvolvo e publico sistemas cloud e aplicativos mobile."
-                  : "Senior Full Stack & Mobile Engineer specialized in building high-impact digital solutions. With a strong background in scalable architecture and user experience, I develop and publish cloud systems and mobile applications."}
-              </p>
-              <p>
-                {locale === "pt"
-                  ? "Atualmente lidero o desenvolvimento de ecossistemas complexos usando React, React Native, Next.js, Node.js e AWS, sempre focado em performance, código limpo e integrações de IA."
-                  : "I currently lead the development of complex ecosystems using React, React Native, Next.js, Node.js, and AWS, always focused on performance, clean code, and AI integrations."}
+                  ? "Senior Full Stack & Mobile Engineer com +7 anos de experiência e +20 projetos entregues, especializado na construção de soluções digitais end-to-end com impacto real. Lidero e desenvolvo arquiteturas escaláveis em nuvem, APIs robustas (Node.js/NestJS) e interfaces de alta performance no frontend (Next.js/React). Experiência sólida em transformar requisitos de negócios em produtos completos, com fluência em pipelines ágeis (CI/CD) e processos de publicação de ecossistemas complexos nas lojas."
+                  : "Senior Full Stack & Mobile Engineer with +7 years of experience and +20 delivered projects, specialized in building end-to-end digital solutions with real impact. I lead and develop scalable cloud architectures, robust APIs (Node.js/NestJS), and high-performance interfaces on frontend (Next.js/React). Solid experience in transforming business requirements into complete products, with fluency in agile pipelines (CI/CD) and publication processes for complex ecosystems in app stores."}
               </p>
             </div>
           </section>
@@ -119,7 +114,9 @@ export default function ResumePage() {
                 <div key={idx} className="relative">
                   <div className="flex justify-between items-baseline mb-0.5">
                     <h4 className="font-semibold text-gray-900 text-sm">
-                      {exp.role}
+                      {typeof exp.role === "string"
+                        ? exp.role
+                        : exp.role[locale]}
                     </h4>
                     <span className="text-[10px] sm:text-xs font-mono text-gray-500 bg-gray-100 px-2 py-0.5 rounded">
                       {exp.period[locale]}

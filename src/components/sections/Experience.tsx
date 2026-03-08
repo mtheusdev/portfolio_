@@ -72,7 +72,9 @@ export default function Experience() {
                           {exp.period[locale]}
                         </p>
                         <h3 className="text-xl text-text-primary font-medium mb-1">
-                          {exp.role}
+                          {typeof exp.role === "string"
+                            ? exp.role
+                            : exp.role[locale]}
                         </h3>
                         <p className="text-lg text-text-secondary font-display mb-4">
                           {exp.company}

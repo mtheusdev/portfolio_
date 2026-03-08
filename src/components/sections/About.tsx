@@ -1,6 +1,7 @@
 "use client";
 import GlassCard from "@/components/ui/GlassCard";
 import SectionTitle from "@/components/ui/SectionTitle";
+import { Link } from "@/i18n/routing";
 import { motion } from "framer-motion";
 import {
   ArrowUpRight,
@@ -54,8 +55,8 @@ export default function About() {
             </p>
             <p>{t("description3")}</p>
 
-            <a
-              href="/cv.pdf"
+            <Link
+              href="/resume"
               target="_blank"
               className="inline-flex mt-6 text-gold-500 hover:text-gold-400 font-medium group transition-colors"
             >
@@ -64,7 +65,7 @@ export default function About() {
                 size={16}
                 className="ml-1 transform transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
               />
-            </a>
+            </Link>
           </motion.div>
 
           {/* Right Panel */}

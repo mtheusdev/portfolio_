@@ -16,17 +16,20 @@ export const EXPERIENCES = [
   {
     period: { pt: "nov 2025 → atual", en: "Nov 2025 → Present" },
     company: "Penzo Tecnologia",
-    role: "Senior Software Engineer & Tech Lead",
+    role: {
+      pt: "Engenheiro de Software Sênior & Tech Lead",
+      en: "Senior Software Engineer & Tech Lead",
+    },
     stack: "React · React Native · Next.js · Redux",
     description: {
       pt: [
         "Tradução de layouts de alta fidelidade em interfaces responsivas (React/NextJS)",
-        "Desenvolvimento do Agroplayer e automação Zap Suite",
+        "Desenvolvimento de e-commerce / marketplace (Agroplayer) e automação de WhatsApp (Zap Suite)",
         "Integração RESTful, boas práticas de performance e acessibilidade",
       ],
       en: [
         "Translating high-fidelity layouts into responsive interfaces (React/NextJS)",
-        "Development of Agroplayer and Zap Suite automation",
+        "Development of e-commerce / marketplace (Agroplayer) and WhatsApp automation (Zap Suite)",
         "RESTful integration, performance best practices and accessibility",
       ],
     },
@@ -38,7 +41,10 @@ export const EXPERIENCES = [
   {
     period: { pt: "mar 2025 → fev 2026", en: "Mar 2025 → Feb 2026" },
     company: "Merchion Tech",
-    role: "Senior Full Stack Engineer",
+    role: {
+      pt: "Engenheiro Full Stack Sênior",
+      en: "Senior Full Stack Engineer",
+    },
     stack: "Next.js · Go · PostgreSQL · Laravel · Nuxt.js · NestJS · VPS",
     description: {
       pt: [
@@ -56,7 +62,10 @@ export const EXPERIENCES = [
   {
     period: { pt: "nov 2023 → mar 2025", en: "Nov 2023 → Mar 2025" },
     company: "SB Group",
-    role: "Tech Lead Full Stack Sênior",
+    role: {
+      pt: "Tech Lead Full Stack Sênior",
+      en: "Senior Full Stack Tech Lead",
+    },
     stack: "React · NestJS · AWS · CI/CD · Context API",
     description: {
       pt: [
@@ -74,7 +83,10 @@ export const EXPERIENCES = [
   {
     period: { pt: "jan 2023 → nov 2023", en: "Jan 2023 → Nov 2023" },
     company: "SB Group",
-    role: "Desenvolvedor Full Stack Pleno (Autônomo)",
+    role: {
+      pt: "Desenvolvedor Full Stack Pleno (Autônomo)",
+      en: "Mid-level Full Stack Developer (Freelance)",
+    },
     stack: "React · NestJS · Node · MongoDB · AWS",
     description: {
       pt: [
@@ -90,7 +102,10 @@ export const EXPERIENCES = [
   {
     period: { pt: "jan 2023 → fev 2024", en: "Jan 2023 → Feb 2024" },
     company: "Flux (Protoflows)",
-    role: "Desenvolvedor Full Stack Pleno",
+    role: {
+      pt: "Desenvolvedor Full Stack Pleno",
+      en: "Mid-level Full Stack Developer",
+    },
     stack: "React Native · Expo · Node.js · GCP",
     description: {
       pt: [
@@ -106,7 +121,10 @@ export const EXPERIENCES = [
   {
     period: { pt: "mar 2022 → jul 2023", en: "Mar 2022 → Jul 2023" },
     company: "UDESC",
-    role: "Bolsista Iniciação Científica (IA Aplicada à Medicina)",
+    role: {
+      pt: "Pesquisador Iniciação Científica (IA Aplicada)",
+      en: "Undergraduate Researcher (Applied AI)",
+    },
     stack: "Python · One-Class SVM · Machine Learning",
     description: {
       pt: [
@@ -124,7 +142,10 @@ export const EXPERIENCES = [
   {
     period: { pt: "mai 2021 → mar 2022", en: "May 2021 → Mar 2022" },
     company: "SoftExpert",
-    role: "Desenvolvedor Frontend Junior",
+    role: {
+      pt: "Desenvolvedor Frontend Junior",
+      en: "Junior Frontend Developer",
+    },
     stack: "React · CI/CD · DevOps · SCRUM",
     description: {
       pt: ["ERP SE Suite — features, testes unitários, manutenção"],
@@ -134,7 +155,10 @@ export const EXPERIENCES = [
   {
     period: { pt: "ago 2020 → mai 2021", en: "Aug 2020 → May 2021" },
     company: "Urbanii",
-    role: "Desenvolvedor Backend Junior",
+    role: {
+      pt: "Desenvolvedor Backend Junior",
+      en: "Junior Backend Developer",
+    },
     stack: "PHP 7 · MySQL · Google Cloud Platform",
     description: {
       pt: ["API de integrações externas"],

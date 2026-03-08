@@ -50,7 +50,11 @@ export default function Header() {
       >
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center max-w-7xl">
           {/* Logo */}
-          <Link href="/" className="group relative">
+          <Link
+            href="/"
+            onClick={() => window.scrollTo(0, 0)}
+            className="group relative"
+          >
             <span className="font-display text-2xl font-semibold tracking-wider text-text-primary">
               MH
             </span>
