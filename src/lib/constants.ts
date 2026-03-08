@@ -69,12 +69,12 @@ export const EXPERIENCES = [
     stack: "React · NestJS · AWS · CI/CD · Context API",
     description: {
       pt: [
-        "Produto escalável Aceleres AI focando na experiência do usuário",
+        "Aceleres AI: Produto voltado para avaliação e gestão de vendedores e equipes de vendas com Inteligência Artificial",
         "Liderança técnica, cerimônias ágeis e gestão no Jira",
         "CI/CD, AWS, caching e lazy loading",
       ],
       en: [
-        "Scalable Aceleres AI product focusing on user experience",
+        "Aceleres AI: Product focused on evaluation and management of salespeople and sales teams using Artificial Intelligence",
         "Technical leadership, agile ceremonies, and Jira management",
         "CI/CD, AWS, caching, and lazy loading",
       ],
@@ -90,12 +90,14 @@ export const EXPERIENCES = [
     stack: "React · NestJS · Node · MongoDB · AWS",
     description: {
       pt: [
-        "SBI School, SBI CheckIn, SBI City, SBI Company",
-        "CI/CD e automação de deploys",
+        "SBI School: Sistema de gestão de escolas com cercamento eletrônico via IA",
+        "SBI CheckIn: Sistema de check-in/out de alunos com reconhecimento de IA",
+        "SBI City & Company: Sistemas de gestão inteligente de cidades e empresas com IA",
       ],
       en: [
-        "SBI School, SBI CheckIn, SBI City, SBI Company",
-        "CI/CD and deployment automation",
+        "SBI School: School management system with AI-powered electronic geofencing",
+        "SBI CheckIn: Student check-in/out system powered by AI recognition",
+        "SBI City & Company: Smart management systems for cities and companies using AI",
       ],
     },
   },
@@ -109,12 +111,10 @@ export const EXPERIENCES = [
     stack: "React Native · Expo · Node.js · GCP",
     description: {
       pt: [
-        "Desenvolvimento Mobile escalável focado em inovação",
-        "Colaboração com design e PMs para definir experiências sólidas",
+        "Plataforma de pesquisa e avaliação estatística de interfaces através de testes A/B",
       ],
       en: [
-        "Scalable Mobile development focused on innovation",
-        "Collaboration with design and PMs to define solid experiences",
+        "Platform for research and statistical evaluation of interfaces through A/B testing",
       ],
     },
   },
@@ -200,8 +200,8 @@ export const PROJECTS = [
     year: "2024",
     title: "Flux",
     description: {
-      pt: "Desenvolvimento do produto inovador da startup Flux (Protoflows), atuando focado no ecossistema cloud.",
-      en: "Development of the innovative product for Flux (Protoflows) startup, focusing on the cloud ecosystem.",
+      pt: "Plataforma de pesquisa e avaliação estatística de interfaces através de testes A/B e fluxos de interação interativos.",
+      en: "Platform for research and statistical evaluation of interfaces through A/B testing and interactive interaction flows.",
     },
     stack: ["React", "Node.js", "Firebase", "GCP"],
     image: "/images/projects/flux.png",
@@ -213,8 +213,8 @@ export const PROJECTS = [
     year: "2024",
     title: "Aceleres AI",
     description: {
-      pt: "Plataforma SaaS de aceleração de negócios focada no uso de Inteligência Artificial e automações integradas.",
-      en: "Business acceleration SaaS platform focused on the use of Artificial Intelligence and integrated automations.",
+      pt: "Produto voltado para avaliação e gestão de vendedores e equipes de vendas com Inteligência Artificial.",
+      en: "Product focused on evaluation and management of salespeople and sales teams using Artificial Intelligence.",
     },
     stack: ["React", "NestJS", "Node.js", "AWS"],
     image: "/images/projects/aceleres.png",
@@ -226,8 +226,8 @@ export const PROJECTS = [
     year: "2023",
     title: "SBI Security Suite",
     description: {
-      pt: "Ecossistema robusto de produtos de gestão e controle (School, CheckIn, City, Company) para a área de segurança patrimonial.",
-      en: "Robust ecosystem of management and control products (School, CheckIn, City, Company) for the corporate security area.",
+      pt: "Gestão inteligente com IA: Cercamento eletrônico de escolas (School), check-in/out facial (CheckIn) e gestão de cidades e empresas (City/Company).",
+      en: "Smart management with AI: Electronic geofencing for schools (School), facial check-in/out (CheckIn), and city/company management (City/Company).",
     },
     stack: ["React", "NestJS", "MongoDB", "AWS"],
     image: "/images/projects/sbisecurity.png",

@@ -98,8 +98,8 @@ export default function ResumePage() {
               </h3>
               <p className="text-[11px] text-gray-700 leading-snug">
                 {locale === "pt"
-                  ? "Senior Full Stack & Mobile Engineer com +7 anos de experiência e +20 projetos entregues, especializado na construção de soluções digitais end-to-end com impacto real. Lidero e desenvolvo arquiteturas escaláveis em nuvem, APIs robustas (Node.js/NestJS) e interfaces de alta performance no frontend (Next.js/React). Experiência sólida em transformar requisitos de negócios em produtos completos, com fluência em pipelines ágeis (CI/CD) e processos de publicação de ecossistemas complexos nas lojas."
-                  : "Senior Full Stack & Mobile Engineer with +7 years of experience and +20 delivered projects, specialized in building end-to-end digital solutions with real impact. I lead and develop scalable cloud architectures, robust APIs (Node.js/NestJS), and high-performance interfaces on frontend (Next.js/React). Solid experience in transforming business requirements into complete products, with fluency in agile pipelines (CI/CD) and publication processes for complex ecosystems in app stores."}
+                  ? "Senior Full Stack & Mobile Engineer com +7 anos de experiência e +20 projetos entregues, especializado na construção de soluções digitais end-to-end. Lidero e desenvolvo arquiteturas escaláveis em nuvem, APIs robustas (Node.js/NestJS) e interfaces de alta performance no frontend (Next.js/React). Experiência sólida em transformar requisitos de negócios em produtos completos."
+                  : "Senior Full Stack & Mobile Engineer with +7 years of experience and +20 delivered projects, specialized in building end-to-end digital solutions. I lead and develop scalable cloud architectures, robust APIs (Node.js/NestJS), and high-performance interfaces on frontend (Next.js/React). Solid experience in transforming business requirements into complete products."}
               </p>
             </div>
           </section>
