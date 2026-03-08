@@ -73,7 +73,7 @@ export default function ResumePage() {
               </span>
             )}
             <span className="flex items-center gap-1.5">
-              <Globe size={12} /> portfolio.mtheus.dev
+              <Globe size={12} /> portfolio-gilt-delta-35.vercel.app
             </span>
           </div>
         </header>
@@ -194,24 +194,29 @@ export default function ResumePage() {
                   <h4 className="text-[10px] font-semibold text-gray-900 uppercase tracking-widest mb-0.5">
                     {tSkills("frontend")}
                   </h4>
-                  <p className="text-xs text-gray-700 font-light">
-                    React, Next.js, React Native, Tailwind CSS, TypeScript
+                  <p className="text-[11px] text-gray-700 font-light leading-snug">
+                    React, Next.js, React Native, Expo, Redux, Context API,
+                    TypeScript, HTML5, SASS/CSS3, Tailwind, Acessibilidade,
+                    Performance UI/UX
                   </p>
                 </div>
                 <div>
                   <h4 className="text-[10px] font-semibold text-gray-900 uppercase tracking-widest mb-0.5">
                     {tSkills("backend")}
                   </h4>
-                  <p className="text-xs text-gray-700 font-light">
-                    Node.js, NestJS, Python, AWS, Docker, PostgreSQL
+                  <p className="text-[11px] text-gray-700 font-light leading-snug">
+                    Node.js, NestJS, Go, PHP/Laravel, PostgreSQL, MongoDB, APIs
+                    RESTful, Integrações de Sistemas, Clean Architecture, SOLID
                   </p>
                 </div>
                 <div>
                   <h4 className="text-[10px] font-semibold text-gray-900 uppercase tracking-widest mb-0.5">
                     {tSkills("tools")}
                   </h4>
-                  <p className="text-xs text-gray-700 font-light">
-                    Git, CI/CD, Jest, Figma
+                  <p className="text-[11px] text-gray-700 font-light leading-snug">
+                    {locale === "pt"
+                      ? "AWS, GCP, Firebase, Docker, CI/CD, Metodologias Ágeis (Scrum/Kanban), Git, Figma, Publicação de Apps (App Store/Google Play)"
+                      : "AWS, GCP, Firebase, Docker, CI/CD, Agile (Scrum/Kanban), Git, Figma, App Store & Google Play Publishing"}
                   </p>
                 </div>
               </div>
