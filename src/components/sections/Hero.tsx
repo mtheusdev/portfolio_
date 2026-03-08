@@ -107,7 +107,7 @@ export default function Hero() {
         >
           <motion.div
             style={{ y: yImage }}
-            className="relative w-full aspect-square max-w-[400px] mx-auto"
+            className="relative w-full aspect-square max-w-[500px] mx-auto"
           >
             {/* Abstract animated border / grid since no photo is provided yet */}
             <div className="absolute inset-0 rounded-full border border-gold-500/20 animate-[spin_20s_linear_infinite]"></div>
@@ -117,10 +117,10 @@ export default function Hero() {
             <div className="absolute shadow-[0_0_80px_rgba(212,160,23,0.15)] bg-[#111] backdrop-blur-sm inset-12 rounded-full flex flex-col items-center justify-center border border-gold-500/10 overflow-hidden group">
               {/* @note: add your profile picture at public/images/profile.jpg */}
               <Image
-                src="/images/profile.jpg"
+                src="/images/profile.jpeg"
                 alt="Matheus Henrique"
                 fill
-                className="object-cover transition-all duration-500 grayscale group-hover:grayscale-0"
+                className="object-cover transition-all duration-500 "
               />
             </div>
 

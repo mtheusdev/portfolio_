@@ -1,5 +1,3 @@
-import { name } from "assert";
-
 export const PERSONAL_INFO = {
   name: "Matheus Henrique",
   role: {
@@ -156,7 +154,7 @@ export const PROJECTS = [
       en: "Digital marketplace for Brazilian agribusiness, built from scratch focusing on scalability and high user volume.",
     },
     stack: ["Next.js", "NestJS", "PostgreSQL", "DevOps"],
-    image: "/images/projects/agroplayer.jpg",
+    image: "/images/projects/agroplayer.png",
     link: "#",
   },
   {
@@ -169,7 +167,7 @@ export const PROJECTS = [
       en: "WhatsApp automation platform focusing on scalability, used by thousands of users and companies.",
     },
     stack: ["Node.js", "NestJS", "Next.js", "PostgreSQL"],
-    image: "/images/projects/zapsuite.jpg",
+    image: "/images/projects/zapsuite.png",
     link: "https://chatbot.zapsuite.com.br/",
   },
   {
@@ -182,7 +180,7 @@ export const PROJECTS = [
       en: "Development of the innovative product for Flux (Protoflows) startup, focusing on the cloud ecosystem.",
     },
     stack: ["React", "Node.js", "Firebase", "GCP"],
-    image: "/images/projects/flux.jpg",
+    image: "/images/projects/flux.png",
     link: "https://protoflows.com",
   },
   {
@@ -195,7 +193,7 @@ export const PROJECTS = [
       en: "Business acceleration SaaS platform focused on the use of Artificial Intelligence and integrated automations.",
     },
     stack: ["React", "NestJS", "Node.js", "AWS"],
-    image: "/images/projects/aceleresai.jpg",
+    image: "/images/projects/aceleres.png",
     link: "https://aceleresai.com",
   },
   {
@@ -208,7 +206,7 @@ export const PROJECTS = [
       en: "Robust ecosystem of management and control products (School, CheckIn, City, Company) for the corporate security area.",
     },
     stack: ["React", "NestJS", "MongoDB", "AWS"],
-    image: "/images/projects/sbisecurity.jpg",
+    image: "/images/projects/sbisecurity.png",
     link: "https://sbi.security",
   },
   {
@@ -221,7 +219,7 @@ export const PROJECTS = [
       en: "Machine Learning model for keratoconus detection using One-Class SVM on visual data.",
     },
     stack: ["Python", "scikit-learn", "Machine Learning"],
-    image: "/images/projects/keratoconus.jpg",
+    image: "/images/projects/ceratocone.jpg",
     link: "https://repositorio.udesc.br/handle/123456789/2464",
   },
   {
@@ -234,7 +232,7 @@ export const PROJECTS = [
       en: "Complete management system with backend API development using PHP and relational database.",
     },
     stack: ["PHP 7", "MySQL", "GCP"],
-    image: "/images/projects/urbanii.jpg",
+    image: "/images/projects/urbanii.png",
   },
   {
     id: "sorteador-de-letras",
@@ -246,7 +244,7 @@ export const PROJECTS = [
       en: "Utility app available on the Google Play Store for practical letter drawing.",
     },
     stack: ["React Native", "Expo", "Google Play"],
-    image: "/images/projects/sorteador.jpg",
+    image: "/images/projects/sorteador.webp",
     link: "https://play.google.com/store/apps/dev?id=7748561045371711792",
   },
   {
@@ -271,7 +269,7 @@ export const PROJECTS = [
       en: "Personal app to help track and count gym workout routines.",
     },
     stack: ["React Native", "Expo", "Mobile"],
-    image: "/images/projects/contador.jpg",
+    image: "/images/projects/contador.png",
   },
 ];
 

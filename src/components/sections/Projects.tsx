@@ -6,6 +6,7 @@ import { PROJECTS } from "@/lib/constants";
 import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 const MOBILE_IDS = [
@@ -17,9 +18,13 @@ const MOBILE_IDS = [
 function PhoneMockup({
   projectId,
   hasPlayStoreLink,
+  image,
+  title,
 }: {
   projectId: string;
   hasPlayStoreLink: boolean;
+  image?: string;
+  title: string;
 }) {
   return (
     <div className="flex items-center justify-center py-6 bg-gradient-to-b from-[#0d0d0d] to-[#111]">
@@ -28,13 +33,22 @@ function PhoneMockup({
         {/* Top notch */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-10 h-[10px] bg-[#0a0a0a] z-10 rounded-b-md border-b border-x border-gold-500/20" />
         {/* Screen area */}
-        <div className="flex-1 bg-gradient-to-br from-[#141414] to-[#1a1a1a] flex items-center justify-center">
-          <span className="font-mono text-[9px] text-gold-500/40 text-center leading-relaxed px-2">
-            [{projectId}]
-          </span>
+        <div className="flex-1 relative bg-gradient-to-br from-[#141414] to-[#1a1a1a] flex items-center justify-center">
+          {image ? (
+            <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-cover object-top"
+            />
+          ) : (
+            <span className="font-mono text-[9px] text-gold-500/40 text-center leading-relaxed px-2">
+              [{projectId}]
+            </span>
+          )}
         </div>
         {/* Home bar */}
-        <div className="h-5 bg-[#0a0a0a] flex items-center justify-center border-t border-gold-500/10">
+        <div className="h-5 relative bg-[#0a0a0a] flex items-center justify-center border-t border-gold-500/10 z-10">
           <div className="w-8 h-1 rounded-full bg-gold-500/20" />
         </div>
       </div>
@@ -60,14 +74,25 @@ function PhoneMockup({
   );
 }
 
-function WebPreview({ projectId }: { projectId: string }) {
+function WebPreview({ image, title }: { image?: string; title: string }) {
   return (
     <div className="relative w-full aspect-video overflow-hidden border-b border-border-subtle bg-bg-secondary flex items-center justify-center text-text-muted font-mono text-sm">
-      <div className="absolute inset-0 bg-gradient-to-tr from-[#111] to-[#1a1a1a] z-0" />
-      <span className="z-10 opacity-50 text-gold-500/50 text-xs">
-        [{projectId}_preview]
-      </span>
-      <div className="absolute inset-0 bg-gold-500/0 group-hover:bg-gold-500/5 transition-colors duration-500 z-20" />
+      {image ? (
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+        />
+      ) : (
+        <>
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#111] to-[#1a1a1a] z-0" />
+          <span className="z-10 opacity-50 text-gold-500/50 text-xs">
+            [preview]
+          </span>
+        </>
+      )}
+      <div className="absolute inset-0 bg-gold-500/0 group-hover:bg-gold-500/10 transition-colors duration-500 z-20 pointer-events-none" />
     </div>
   );
 }
@@ -136,10 +161,12 @@ export default function Projects() {
                         <PhoneMockup
                           projectId={project.id}
                           hasPlayStoreLink={!!project.link}
+                          image={project.image}
+                          title={project.title}
                         />
                       </div>
                     ) : (
-                      <WebPreview projectId={project.id} />
+                      <WebPreview image={project.image} title={project.title} />
                     )}
 
                     {/* Content */}
