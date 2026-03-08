@@ -23,9 +23,9 @@
   },
   "about": {
     "title": "About me",
-    "description1": "I am a <bold>Senior Full Stack & Mobile Engineer</bold> specialized in building high-impact digital solutions. With over 5 years of experience, my journey is guided by the constant pursuit of uniting <gold>scalable architecture</gold> with <gold>exceptional user experiences</gold>. Beyond web and cloud systems, I am passionate about creating and publishing <bold>mobile applications on the Google Play Store</bold>.",
-    "description2": "I currently lead the development of complex ecosystems, from architectural design in the cloud to the implementation of immersive interfaces on frontend and mobile. My main stack involves <bold>React, React Native, Next.js, Node.js and AWS</bold>.",
-    "description3": "I am driven by technical challenges and fascinated by the intersections between software engineering and artificial intelligence applied to the real world.",
+    "description1": "I am a <bold>Senior Full Stack & Mobile Engineer</bold> specialized in building high-impact digital solutions. With a strong core in HTML5, CSS3, and JavaScript, my journey led me to master <gold>scalable frontend architecture</gold> and <bold>mobile</bold> development focused on accessibility.",
+    "description2": "I currently lead the development of complex ecosystems, translating high-fidelity layouts into responsive interfaces. My main stack involves <bold>React, React Native, Next.js, and Expo</bold>, applying performance best practices (lazy loading, caching) and advanced state management (Redux, Context API).",
+    "description3": "I have strong experience in agile environments (CI/CD, Git, RESTful API integrations) and publishing/maintaining apps on the Apple Store and Google Play.",
     "cvButton": "View full resume",
     "educationTitle": "Education",
     "educationDegree": "UDESC — Bachelor's in Computer Science",

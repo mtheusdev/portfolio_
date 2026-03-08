@@ -12,6 +12,8 @@ export default function Header() {
   const pathname = usePathname();
   const router = useRouter();
 
+  if (pathname.includes("/resume")) return null;
+
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -75,14 +77,13 @@ export default function Header() {
               {locale === "en" ? "PT" : "EN"}
             </button>
 
-            <a
-              href="/cv.pdf"
+            <Link
+              href="/resume"
               target="_blank"
-              rel="noopener noreferrer"
               className="btn-gold text-xs uppercase tracking-widest"
             >
               {t("downloadCV")}
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile Toggle */}
@@ -133,14 +134,14 @@ export default function Header() {
               >
                 {t("switchTo")} {locale === "en" ? "PT" : "EN"}
               </button>
-              <a
-                href="/cv.pdf"
+              <Link
+                href="/resume"
                 target="_blank"
-                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
                 className="btn-gold text-sm mt-4"
               >
                 {t("downloadCV")}
-              </a>
+              </Link>
             </nav>
           </motion.div>
         )}

@@ -1,9 +1,14 @@
+"use client";
+import { usePathname } from "@/i18n/routing";
 import { PERSONAL_INFO } from "@/lib/constants";
 import { Github, Linkedin } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const pathname = usePathname();
   const t = useTranslations("footer");
+
+  if (pathname.includes("/resume")) return null;
   return (
     <footer className="relative border-t border-[rgba(212,160,23,0.1)] py-8 mt-24">
       <div className="container mx-auto px-6 max-w-7xl flex flex-col md:flex-row items-center justify-between gap-4">

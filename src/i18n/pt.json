@@ -23,9 +23,9 @@
   },
   "about": {
     "title": "Sobre mim",
-    "description1": "Sou um <bold>Senior Full Stack & Mobile Engineer</bold> especializado na construção de soluções digitais de alto impacto. Com mais de 5 anos de experiência, minha jornada é guiada pela constante busca em unir <gold>arquitetura escalável</gold> com <gold>experiências de usuário excepcionais</gold>. Além de sistemas web e cloud, tenho paixão por criar e publicar <bold>aplicativos mobile na Google Play Store</bold>.",
-    "description2": "Atualmente lidero o desenvolvimento de ecossistemas complexos, indo desde a concepção arquitetural em cloud até a implementação de interfaces imersivas no frontend e em mobile. Minha principal stack envolve <bold>React, React Native, Next.js, Node.js e AWS</bold>.",
-    "description3": "Sou movido por desafios técnicos e fascinado pelas interseções entre engenharia de software e inteligência artificial aplicadas ao mundo real.",
+    "description1": "Sou um <bold>Senior Full Stack & Mobile Engineer</bold> especializado na construção de soluções digitais de alto impacto. Com forte base em HTML5, CSS3 e JavaScript, minha jornada me levou a dominar <gold>arquitetura frontend escalável</gold> e desenvolvimento <bold>mobile</bold> focado em acessibilidade.",
+    "description2": "Atualmente lidero o desenvolvimento de ecossistemas complexos, transformando layouts de alta fidelidade em interfaces responsivas. Minha principal stack envolve <bold>React, React Native, Next.js e Expo</bold>, aplicando boas práticas de performance (lazy loading, caching) e gerenciamento de estado avançado (Redux, Context API).",
+    "description3": "Possuo forte vivência em ambientes ágeis (CI/CD, Git, Integração de APIs RESTful) e em publicação/manutenção nas lojas Apple Store e Google Play.",
     "cvButton": "Ver currículo completo",
     "educationTitle": "Formação Acadêmica",
     "educationDegree": "UDESC — Bacharelado em Ciência da Computação",
