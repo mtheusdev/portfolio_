@@ -51,9 +51,20 @@ export default function About() {
             <p>
               {t.rich("description2", {
                 bold: (chunks) => <strong>{chunks}</strong>,
+                gold: (chunks) => (
+                  <span className="text-gold-400">{chunks}</span>
+                ),
               })}
             </p>
-            <p>{t("description3")}</p>
+            <p>
+              {t.rich("description3", {
+                bold: (chunks) => (
+                  <strong className="text-text-primary font-normal">
+                    {chunks}
+                  </strong>
+                ),
+              })}
+            </p>
 
             <Link
               href="/resume"
